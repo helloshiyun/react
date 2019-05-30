@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="test1"></div>
+<div id="test2"></div>
+<script src="../react/js/react.development.js" type="text/javascript" charset="utf-8"></script>
+<script src="../react/js/react-dom.development.js" type="text/javascript" charset="utf-8"></script>
+<script src="../react/js/babel.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    const t1 = React.createElement('h2',{id:'atguigu'},'i loveyou')
+    ReactDOM.render(t1,document.getElementById('test1'))
+</script>
+<script type="text/babel">
+const myid = 'bj'
+const  tt1 = <h3 id={myid}>i missing you </h3>  
+    ReactDOM.render(tt1,document.getElementById('test2'))
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

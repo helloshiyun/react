@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dd"></div>
+<script src="../react/js/react.development.js" type="text/javascript" charset="utf-8"></script>
+<script src="../react/js/react-dom.development.js" type="text/javascript" charset="utf-8"></script>
+<script src="../react/js/babel.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/babel">
+    const names = ['a','b','c','d']
+    const ul = (
+        <ul>
+            {
+                names.map((name,index)=><li key={index}>{name}</li>)
+            }
+        </ul>
+    )
+    ReactDOM.render(ul,document.getElementById('dd'))
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
